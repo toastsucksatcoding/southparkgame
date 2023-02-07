@@ -1,0 +1,508 @@
+﻿<?xml version="1.0" ?>
+<data>
+	<game>
+		<velocity comment="pixels/sec">200</velocity>
+		<health>25</health>
+		<max_fps>25</max_fps>
+		<round_time>60</round_time>
+	</game>
+	<characters>
+		<character id="cartman">
+			<name>Cartman</name>
+			<file cache="true">assets/character_cartman.swf</file>
+			<sound cache="true">punch.mp3</sound>
+			<sound cache="true">throw.mp3</sound>
+			<sound cache="true">headdrop-squeeze.mp3</sound>
+			<sound cache="true">explosion.mp3</sound>
+			<sound cache="true">burn.mp3</sound>
+			<sound cache="true">cartman/avion.mp3</sound>
+			<sound cache="true">cartman/pedo.mp3</sound>
+			<sound cache="true">cartman/stomp.mp3</sound>
+			<sound cache="true">cartman/conversion-sumo.mp3</sound>
+			<sound cache="true">cartman/voice-cartman.mp3</sound>
+			<attack id="sumo">
+				<type>super</type>
+				<power>6</power>
+				<latency>1200</latency>
+				<duration>2400</duration>
+				<attackId>sumo</attackId>
+				<effect>squeeze</effect>
+				<effectDuration>1200</effectDuration>
+				<control>left down right kick</control>
+				<blockable>false</blockable>
+			</attack>
+			<attack id="cheesypoofs">
+				<type>sp2</type>
+				<power>3</power>
+				<latency>500</latency>
+				<duration>600</duration>
+				<effect>ouch</effect>
+				<effectDuration>500</effectDuration>
+				<control>left right punch</control>
+				<bullet>poofs</bullet>
+				<blockable>true</blockable>
+			</attack>
+			<attack id="fart">
+				<type>sp1</type>
+				<power>3</power>
+				<latency>1000</latency>
+				<duration>1000</duration>
+				<effect>burn</effect>
+				<effectDuration>1000</effectDuration>
+				<control>right down kick</control>
+				<blockable>true</blockable>
+			</attack>
+			<attack id="hittler">
+				<type>fatality</type>
+				<power>0</power>
+				<latency>3000</latency>
+				<duration>3000</duration>
+				<effect>explode</effect>
+				<effectDuration>3000</effectDuration>
+				<control>right left left right punch</control>
+			</attack>
+		</character>
+		<character id="kyle">
+			<name>Kyle</name>
+			<file cache="true">assets/character_kyle.swf</file>
+			<sound cache="true">punch.mp3</sound>
+			<sound cache="true">throw.mp3</sound>
+			<sound cache="true">headdrop-squeeze.mp3</sound>
+			<sound cache="true">explosion.mp3</sound>
+			<sound cache="true">burn.mp3</sound>
+			<sound cache="true">cartman/stomp.mp3</sound>
+			<sound cache="true">kenny/silbido.mp3</sound>
+			<sound cache="true">kyle/latigo.mp3</sound>
+			<sound cache="true">kyle/motosierra.mp3</sound>
+			<sound cache="true">kyle/elefante-se-va.mp3</sound>
+			<sound cache="true">kyle/voice-kyle.mp3</sound>
+			<attack id="whip">
+				<type>sp2</type>
+				<power>2</power>
+				<latency>400</latency>
+				<duration>400</duration>
+				<effect>ouch</effect>
+				<effectDuration>400</effectDuration>
+				<control>left left punch</control>
+				<blockable>true</blockable>
+			</attack>
+			<attack id="shuri">
+				<type>sp1</type>
+				<power>2</power>
+				<latency>750</latency>
+				<duration>600</duration>
+				<effect>ouch</effect>
+				<effectDuration>100</effectDuration>
+				<control>left right kick</control>
+				<bullet>shuri</bullet>
+				<blockable>true</blockable>
+			</attack>
+			<attack id="elephant">
+				<type>super</type>
+				<power>6</power>
+				<latency>1000</latency>
+				<duration>4300</duration>
+				<attackId>elephant</attackId>
+				<bullet>elephant</bullet>
+				<effect>elephant</effect>
+				<effectDuration>3300</effectDuration>
+				<control>down down left punch</control>
+				<blockable>false</blockable>
+			</attack>
+			<attack id="chainsaw">
+				<type>fatality</type>
+				<power>0</power>
+				<latency>4600</latency>
+				<duration>3000</duration>
+				<effect>decap</effect>
+				<effectDuration>3000</effectDuration>
+				<control>right left down down kick</control>
+			</attack>
+		</character>
+		<character id="kenny">
+			<name>Kenny</name>
+			<file cache="true">assets/character_kenny.swf</file>
+			<sound cache="true">punch.mp3</sound>
+			<sound cache="true">throw.mp3</sound>
+			<sound cache="true">explosion.mp3</sound>
+			<sound cache="true">burn.mp3</sound>
+			<sound cache="true">cartman/stomp.mp3</sound>
+			<sound cache="true">kenny/silbido.mp3</sound>
+			<sound cache="true">kenny/aparece-death.mp3</sound>
+			<sound cache="true">kenny/golpe-death.mp3</sound>
+			<sound cache="true">kenny/ratas-comiendo.mp3</sound>
+			<sound cache="true">kenny/ratas-viniendo.mp3</sound>
+			<sound cache="true">kenny/voz-kenny-prefatality.mp3</sound>
+			<sound cache="true">kenny/voice-kenny.mp3</sound>
+			<sound cache="true">kenny/rayo.mp3</sound>
+			<attack id="death">
+				<type>super</type>
+				<power>6</power>
+				<latency>1300</latency>
+				<duration>3600</duration>
+				<attackId>death</attackId>
+				<bullet>death</bullet>
+				<effect>death</effect>
+				<effectDuration>200</effectDuration>
+				<control>left down down kick</control>
+				<blockable>false</blockable>
+			</attack>
+			<attack id="rats">
+				<type>sp1</type>
+				<power>2</power>
+				<latency>1000</latency>
+				<duration>1200</duration>
+				<attackId>rats</attackId>
+				<effect>rats</effect>
+				<effectDuration>1200</effectDuration>
+				<control>left down kick</control>
+				<bullet>rats1</bullet>
+				<blockable>false</blockable>
+			</attack>
+			<attack id="bolt">
+				<type>sp2</type>
+				<power>2</power>
+				<latency>400</latency>
+				<duration>1300</duration>
+				<effect>burn</effect>
+				<effectDuration>1300</effectDuration>
+				<control>right right punch</control>
+				<blockable>true</blockable>
+			</attack>
+			<attack id="barrel">
+				<type>fatality</type>
+				<power>0</power>
+				<latency>0</latency>
+				<duration>3000</duration>
+				<effect>none</effect>
+				<control>down right down right punch</control>
+			</attack>
+		</character>
+		<character id="stan">
+			<name>Stan</name>
+			<file cache="true">assets/character_stan.swf</file>
+			<sound cache="true">punch.mp3</sound>
+			<sound cache="true">throw.mp3</sound>
+			<sound cache="true">headdrop-squeeze.mp3</sound>
+			<sound cache="true">explosion.mp3</sound>
+			<sound cache="true">burn.mp3</sound>
+			<sound cache="true">cartman/stomp.mp3</sound>
+			<sound cache="true">stan/golpe-guitarra.mp3</sound>
+			<sound cache="true">stan/impacto-vomito.mp3</sound>
+			<sound cache="true">stan/m16.mp3</sound>
+			<sound cache="true">stan/sostiene-guitarra.mp3</sound>
+			<sound cache="true">stan/spooky-aparece.mp3</sound>
+			<sound cache="true">stan/spooky-crunch-fatality.mp3</sound>
+			<sound cache="true">stan/stan-abreboca.mp3</sound>
+			<sound cache="true">stan/voice-stan.mp3</sound>
+			<attack id="machinegun">
+				<type>sp2</type>
+				<power>2</power>
+				<latency>300</latency>
+				<duration>700</duration>
+				<effect>ouch</effect>
+				<effectDuration>200</effectDuration>
+				<bullet>bullet</bullet>
+				<control>down right kick</control>
+				<blockable>true</blockable>
+			</attack>
+			<attack id="vomit">
+				<type>sp1</type>
+				<power>2</power>
+				<latency>600</latency>
+				<duration>800</duration>
+				<bullet>vomit</bullet>
+				<effect>vomit</effect>
+				<effectDuration>400</effectDuration>
+				<control>right left punch</control>
+				<blockable>true</blockable>
+			</attack>
+			<attack id="guitar">
+				<type>super</type>
+				<power>6</power>
+				<latency>400</latency>
+				<duration>1600</duration>
+				<effect>squeeze</effect>
+				<effectDuration>1800</effectDuration>
+				<control>left left right kick</control>
+				<blockable>false</blockable>
+			</attack>
+			<attack id="fish">
+				<type>fatality</type>
+				<power>0</power>
+				<latency>5000</latency>
+				<duration>3000</duration>
+				<effect>decap</effect>
+				<effectDuration>4500</effectDuration>
+				<control>left right left down kick</control>
+			</attack>
+		</character>
+		<character id="jesus">
+			<name>Jesus</name>
+			<file cache="true">assets/character_jesus.swf</file>
+			<sound cache="true">punch.mp3</sound>
+			<sound cache="true">headdrop-squeeze.mp3</sound>
+			<sound cache="true">explosion.mp3</sound>
+			<sound cache="true">burn.mp3</sound>
+			<sound cache="true">cartman/stomp.mp3</sound>
+			<sound cache="true">jesus/desaparece-aparece.mp3</sound>
+			<sound cache="true">jesus/llama-a-santa.mp3</sound>
+			<sound cache="true">jesus/revolea-brazo-loop.mp3</sound>
+			<sound cache="true">jesus/salud.mp3</sound>
+			<sound cache="true">jesus/santa-en-accion.mp3</sound>
+			<sound cache="true">jesus/voice-jesus.mp3</sound>
+			<attack id="teleport">
+				<type>sp1</type>
+				<power>0</power>
+				<latency>1000</latency>
+				<duration>2500</duration>
+				<effect>teleport</effect>
+				<effectDuration>1000</effectDuration>
+				<attackId>teleport</attackId>
+				<control>left down kick</control>
+				<blockable>true</blockable>
+			</attack>
+			<attack id="fly">
+				<type>sp2</type>
+				<power>2</power>
+				<latency>800</latency>
+				<duration>1400</duration>
+				<attackId>fly</attackId>
+				<effect>ouch</effect>
+				<effectDuration>600</effectDuration>
+				<control>right down punch</control>
+				<blockable>true</blockable>
+			</attack>
+			<attack id="heal">
+				<type>super</type>
+				<power>0</power>
+				<latency>600</latency>
+				<duration>600</duration>
+				<effect>heal</effect>
+				<effectDuration>600</effectDuration>
+				<attackId>heal</attackId>
+				<control>left down right punch</control>
+				<blockable>false</blockable>
+			</attack>
+			<attack id="santa">
+				<type>fatality</type>
+				<power>0</power>
+				<latency>1600</latency>
+				<duration>6000</duration>
+				<effect>squeeze</effect>
+				<effectDuration>10000</effectDuration>
+				<control>right left left down kick</control>
+			</attack>
+		</character>
+		<character id="satan">
+			<name>Satan</name>
+			<file cache="true">assets/character_satan.swf</file>
+			<sound cache="true">punch.mp3</sound>
+			<sound cache="true">explosion.mp3</sound>
+			<sound cache="true">burn.mp3</sound>
+			<sound cache="true">cartman/stomp.mp3</sound>
+			<sound cache="true">satan/blackdog-queman.mp3</sound>
+			<sound cache="true">satan/satan-fatality.mp3</sound>
+			<sound cache="true">satan/satan-llama-blackdogs.mp3</sound>
+			<sound cache="true">satan/satan-llama-saddam.mp3</sound>
+			<sound cache="true">satan/voice-satan.mp3</sound>
+			<attack id="skull">
+				<type>sp1</type>
+				<power>2</power>
+				<latency>400</latency>
+				<duration>800</duration>
+				<bullet>skull</bullet>
+				<effect>ouch</effect>
+				<effectDuration>200</effectDuration>
+				<control>down down kick</control>
+				<blockable>true</blockable>
+			</attack>
+			<attack id="dogs">
+				<type>sp2</type>
+				<power>2</power>
+				<latency>800</latency>
+				<duration>1200</duration>
+				<attackId>dogs</attackId>
+				<effect>dogs</effect>
+				<effectDuration>1200</effectDuration>
+				<bullet>dogs</bullet>
+				<control>right left punch</control>
+				<blockable>false</blockable>
+			</attack>
+			<attack id="sadam">
+				<type>super</type>
+				<power>6</power>
+				<latency>900</latency>
+				<duration>1200</duration>
+				<attackId>sadam</attackId>
+				<effect>sadam</effect>
+				<effectDuration>1200</effectDuration>
+				<bullet>sadam</bullet>
+				<control>right left down punch</control>
+				<blockable>false</blockable>
+			</attack>
+			<attack id="britney">
+				<type>fatality</type>
+				<power>0</power>
+				<latency>3200</latency>
+				<duration>5000</duration>
+				<effect>explode</effect>
+				<effectDuration>8000</effectDuration>
+				<control>down left right left punch</control>
+			</attack>
+		</character>
+		<character id="chef">
+			<name>Chef</name>
+			<file cache="true">assets/character_chef.swf</file>
+			<sound cache="true">punch.mp3</sound>
+			<sound cache="true">explosion.mp3</sound>
+			<sound cache="true">burn.mp3</sound>
+			<sound cache="true">cartman/stomp.mp3</sound>
+			<sound cache="true">chef/chef-saca-mic.mp3</sound>
+			<sound cache="true">chef/chef-seconvierte.mp3</sound>
+			<sound cache="true">chef/espatula.mp3</sound>
+			<sound cache="true">chef/espatula-laser.mp3</sound>
+			<sound cache="true">chef/voice-chef.mp3</sound>
+			<attack id="spatula">
+				<type>sp1</type>
+				<power>3</power>
+				<latency>400</latency>
+				<duration>500</duration>
+				<effect>ouch</effect>
+				<effectDuration>200</effectDuration>
+				<control>left right punch</control>
+				<blockable>true</blockable>
+			</attack>
+			<attack id="microphone">
+				<type>sp2</type>
+				<power>3</power>
+				<latency>500</latency>
+				<duration>1200</duration>
+				<effect>ouch</effect>
+				<effectDuration>1200</effectDuration>
+				<bullet>microphone</bullet>
+				<control>left left kick</control>
+				<blockable>false</blockable>
+			</attack>
+			<attack id="darkchef">
+				<type>super</type>
+				<power>6</power>
+				<latency>1200</latency>
+				<duration>2000</duration>
+				<attackId>darkchef</attackId>
+				<effect>burn</effect>
+				<effectDuration>1500</effectDuration>
+				<control>down right right punch</control>
+				<blockable>false</blockable>
+			</attack>
+			<attack id="gastank">
+				<type>fatality</type>
+				<power>0</power>
+				<latency>3200</latency>
+				<duration>6000</duration>
+				<effect>burnexplode</effect>
+				<effectDuration>7000</effectDuration>
+				<control>left right down right kick</control>
+			</attack>
+		</character>
+		<character id="garrison">
+			<name>Garrison</name>
+			<file cache="true">assets/character_garrison.swf</file>
+			<attack id="spatula">
+				<type>sp1</type>
+				<power>2</power>
+				<latency>400</latency>
+				<duration>500</duration>
+				<effect>ouch</effect>
+				<effectDuration>200</effectDuration>
+				<control>left right kick</control>
+				<blockable>true</blockable>
+			</attack>
+			<attack id="microphone">
+				<type>sp2</type>
+				<power>2</power>
+				<latency>500</latency>
+				<duration>1200</duration>
+				<effect>ouch</effect>
+				<effectDuration>1200</effectDuration>
+				<bullet>microphone</bullet>
+				<control>left right punch</control>
+				<blockable>false</blockable>
+			</attack>
+			<attack id="darkchef">
+				<type>super</type>
+				<power>6</power>
+				<latency>900</latency>
+				<duration>2000</duration>
+				<attackId>darkchef</attackId>
+				<effect>burn</effect>
+				<effectDuration>1500</effectDuration>
+				<control>left down right kick</control>
+				<blockable>false</blockable>
+			</attack>
+			<attack id="gastank">
+				<type>fatality</type>
+				<power>0</power>
+				<latency>3200</latency>
+				<duration>6000</duration>
+				<effect>burn</effect>
+				<effectDuration>8000</effectDuration>
+				<control>jump jump punch</control>
+			</attack>
+		</character>
+	</characters>
+	<controls>
+		<player comment="for tournament">
+			<punch>A</punch>
+			<kick>S</kick>
+			<block>D</block>
+			<left>LEFT</left>
+			<right>RIGHT</right>
+			<jump>UP</jump>
+			<down>DOWN</down>
+		</player>
+		<player comment="for player 1 DeathMatch">
+			<punch>Q</punch>
+			<kick>W</kick>
+			<block>E</block>
+			<left>C</left>
+			<down>V</down>
+			<right>B</right>
+			<jump>F</jump>
+		</player>
+		<player comment="for player 2 DeathMatch">
+			<punch>I</punch>
+			<kick>O</kick>
+			<block>P</block>
+			<left>LEFT</left>
+			<down>DOWN</down>
+			<right>RIGHT</right>
+			<jump>UP</jump>
+		</player>
+	</controls>
+	<attack id="punch">
+		<label>punch</label>
+		<power>1</power>
+		<latency>100</latency>
+		<duration>100</duration>
+		<effect>ouch</effect>
+		<effectDuration>100</effectDuration>
+		<control>punch</control>
+	</attack>
+	<attack id="kick">
+		<label>kick</label>
+		<power>1</power>
+		<latency>100</latency>
+		<duration>200</duration>
+		<effect>ouch</effect>
+		<effectDuration>100</effectDuration>
+		<control>kick</control>
+	</attack>
+	<scenarios>
+		<scenario id="hellraise">assets/scenario_2.swf</scenario>
+		<scenario id="hellraise">assets/scenario_3.swf</scenario>
+		<scenario id="hellraise">assets/scenario_4.swf</scenario>
+		<scenario id="hellraise">assets/scenario_5.swf</scenario>
+		<scenario id="hellraise">assets/scenario_1.swf</scenario>
+	</scenarios>
+</data>

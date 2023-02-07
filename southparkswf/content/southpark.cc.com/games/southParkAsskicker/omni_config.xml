@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<omni_config>
+   <!--internal name for movie clip loader name. -->
+   <loader_name>_omniture_metrics_mc</loader_name>
+   <metrics_swf_url>as_metrics.swf</metrics_swf_url>
+   <account>viamtvdev</account>
+   <namespace>viamtvdev</namespace>
+   <!-- tracking image hostname -->
+   <cname>viamtvdev.112.2o7.net</cname>
+   <!-- aka "g" -->
+   <pageurl>http://www.mtv-d.mtvi.com/InGameTrackingTest.html</pageurl>
+   <clickmap_enabled>false</clickmap_enabled>
+   <!-- <clickmap_page>clickmap page</clickmap_page> -->
+   <!-- <movie_id>Some Flash Object Id</movie_id> -->
+   <test_support>false</test_support>
+   <debugactive>false</debugactive>
+   <var_map>
+      <var name="prop1" value="artist"/>
+      <var name="prop2" value="album"/>
+      <var name="prop3" value="parameters"/>
+      <var name="prop4" value="login"/>
+      <var name="prop5" value="gender"/>
+      <var name="prop6" value="age"/>
+      <var name="prop7" value="demographic"/>
+      <var name="prop8" value="fbml_grid"/>
+      <var name="prop9" value="message_boad_name"/>
+      <var name="prop10" value="od_record"/>
+      <var name="prop11" value="votes"/>
+      <var name="prop12" value="video_origin"/>
+      <var name="prop13" value="label"/>
+      <var name="prop14" value="video_type"/>
+      <var name="prop15" value="podcast_dl_rollup"/>
+      <var name="prop16" value="partner"/>
+      <var name="prop17" value="intcmp"/>
+      <var name="prop18" value="news_story"/>
+      <var name="prop19" value="story_date"/>
+      <var name="prop20" value="postcast_sub_source"/>
+      <var name="prop21" value="od_rollup"/>
+      <var name="prop22" value="rollup"/>
+      <var name="prop23" value="od_deeplink"/>
+      <var name="prop24" value="bandwidth"/>
+      <var name="prop25" value="flashversion"/>
+      <var name="prop26" value="rss"/>
+      <var name="prop27" value="od_gateway"/>
+      <var name="prop28" value="od_title"/>
+      <var name="prop39" value="game_event"/>
+      <var name="prop40" value="game_event_details"/>
+   -->
+   </var_map>
+</omni_config>
+
+
+
+
+
